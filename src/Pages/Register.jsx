@@ -11,8 +11,8 @@ const Register = () => {
         e.preventDefault();
 
         // set the user data to the localStorage
-        localStorage.setItem('credentials',JSON.stringify(credentials))
-        history.push('/login')
+        localStorage.setItem('credentials', JSON.stringify(credentials))
+        history.push('/login');
         
     }
     const handleChange = (e) => {

@@ -19,13 +19,13 @@ const CoinPage = () => {
     const fetchSingleCoin = async () => {
         
         //fetch the coin data here
-        const { data }=await axios.get(SingleCoin(id));
-        setCoin(data)
+        const { data } = await axios.get(SingleCoin(id));
+        setCoin(data);
     }
 
     useEffect(() => {
         fetchSingleCoin();
-
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     
